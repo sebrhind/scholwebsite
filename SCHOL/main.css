@@ -1,7 +1,13 @@
 #herobanner {
     margin: auto;
     width: 100%;
-    margin-top: 0px;
+    position: relative;
+}
+
+.typewrite {
+    font-size: 30px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #praise {
@@ -12,33 +18,29 @@
 ptext {
     font-size: 15px;
     font-style: italic;
+    
 }
 
 #heroText {
-    padding-top: 10px;
+    padding: 15px;
     margin: auto;
     text-align: center;
 }
 
 
-.typewriter h3 {
-    overflow: hidden; 
-    white-space: nowrap; 
-    margin: 0 auto; 
-    letter-spacing: .10em;
-    animation: 
-    typing 3s steps(30, end),
-    blink-caret .5s step-end infinite;
-}
 
-
-@keyframes typing {
-    from {width: 0}
-    to {width: 100%}
-}
 
 .responsive {
     width: 100%;
     height: auto;
 }
 
+#expl {
+    justify-content: center;
+    width: 400px;
+    height: 160px;
+    background-color: indianred;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+}
