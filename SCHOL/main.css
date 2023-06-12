@@ -1,0 +1,44 @@
+#herobanner {
+    margin: auto;
+    width: 100%;
+    margin-top: 0px;
+}
+
+#praise {
+    margin: auto;
+    text-align: center;
+}
+
+ptext {
+    font-size: 15px;
+    font-style: italic;
+}
+
+#heroText {
+    padding-top: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.typewriter h3 {
+    overflow: hidden; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .10em;
+    animation: 
+    typing 3s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
