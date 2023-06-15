@@ -4,10 +4,14 @@
     position: relative;
 }
 
+nav-top {
+    font-family: 'Montserrat', sans-serif;
+}
 .typewrite {
     font-size: 30px;
     color: black;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
 }
 
 #praise {
@@ -24,6 +28,7 @@ ptext {
 #heroText {
     padding: 15px;
     margin: auto;
+    margin-top: 25px;
     text-align: center;
 }
 
@@ -35,12 +40,46 @@ ptext {
     height: auto;
 }
 
-#expl {
-    justify-content: center;
-    width: 400px;
-    height: 160px;
-    background-color: indianred;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 15px;
+.container > * {
+  margin-bottom: 10px;
 }
+
+/* Now let's apply grid for wider viewports. */
+@media screen and (min-width: 40em) {
+  .container > * {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  /* Define the grid */
+  .container {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 10px 10px;
+  }
+  /* Place items on the grid */
+  .content {
+    grid-column: 2 / 3;
+  }
+}
+
+.container h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#xleft {
+    background-color: darkseagreen;
+    justify-content: center;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+
+#xmid {
+    background-color: lightyellow;
+}
+
+#xright {
+    background-color: indianred;
+}
+
